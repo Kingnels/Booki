@@ -1,0 +1,27 @@
+$primary-color:#fff;
+$secondary-color:#0065FC;
+$Special-color:rgb(41, 247, 41);
+$grey:#f2f2f2;
+
+@mixin flex ($direction, $justification, $alignment) {
+    display: flex;
+    justify-content: $justification;
+    flex-direction: $direction;
+    align-items: $alignment;
+}
+
+ul{
+    li{
+        list-style: none;
+    }
+}
+
+
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
