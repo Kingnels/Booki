@@ -1,0 +1,54 @@
+.main2{
+    @include flex( column,flex-start,flex-start);
+    // border: 2px solid black;
+    // padding: 1rem;
+    margin: 1rem 0;
+
+    .main2-text{
+        // border: 2px solid black;
+        margin: 2rem 0;
+        width: 15rem;
+        p{
+            font-size: 1.4rem;
+        }
+        
+    }
+
+    .main2-contents{
+        @include flex (row, flex-start,flex start);
+        width: 100%;
+
+        .four-box1{
+            @include flex (column,center, center);
+            margin-bottom: 1rem;
+            width: 20rem;
+            height: 30rem;
+            overflow: hidden;
+            border-radius: 25px;
+            // border: 2px solid red;
+            box-shadow: 0 8px 10px #e5e1e1;
+            .image1{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                overflow: hidden;
+                justify-content: flex-start; 
+                img{
+                    width: 100%;
+                    height: 85%rem;
+                }
+            }
+            .image-text {
+                // height: 35%;
+                width: 100%;
+                padding: 20px;
+                // padding-left: 10px;
+            }
+
+
+        }
+
+
+
+    }
+}
