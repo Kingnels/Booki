@@ -1,6 +1,6 @@
 @import "settings";
 @import "main2";
-
+@import "footer";
 body {
     .active{
     color: #0065FC;
@@ -354,7 +354,6 @@ body {
             }
 
             .content2{
-
                 margin: 0;
                 // border: 3px solid #000;
                 @include flex (column, center, center);
@@ -364,9 +363,7 @@ body {
                 // height:85vh;
                 background-color:$grey;
                 border-radius: 25px;
-
-
-
+                
                 .card2{
                     @include flex(row,center, flex-start);
                     margin:1rem 1rem;
@@ -416,44 +413,27 @@ body {
     
                         .stars{
                             @include flex (row, flex-start,flex-start);
-                                .star{
-                                    i{
-                                        // margin-bottom: 0.5rem;
-                                        font-size: 20px;
-                                        color: $secondary-color;
-    
-                                    }
+                            .star{
+                                i{
+                                    // margin-bottom: 0.5rem;
+                                    font-size: 20px;
+                                    color: $secondary-color;
+
                                 }
-                                .star1{
-                                    i{
-                                        // margin-bottom: 0.5rem;
-                                        padding-left: 0.2rem;
-                                        font-size: 20px;
-                                        color: rgb(212, 212, 212);
-    
-                                    }
-                                  
-                                  
-                                }
-                                
+                            }
+                            .star1{
+                                i{
+                                    // margin-bottom: 0.5rem;
+                                    padding-left: 0.2rem;
+                                    font-size: 20px;
+                                    color: rgb(212, 212, 212);
+
+                                } 
+                            }       
                         }
-                
                     }
-            
-                    
-    
                 }
-
-
             }
-
-            
-
-
         }
-      
-
     }
-
-
 }

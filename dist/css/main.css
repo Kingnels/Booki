@@ -108,6 +108,29 @@ ul li {
   padding: 20px;
 }
 
+footer {
+  background: #f2f2f2;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100vw;
+}
+footer .part1 {
+  width: 550px;
+  padding-top: 2.5rem;
+  padding-left: 3rem;
+  padding-bottom: 5rem;
+}
+footer .part1 h2 {
+  line-height: 2.5rem;
+}
+footer .part1 p {
+  line-height: 2rem;
+  font-weight: 50;
+  color: rgb(122, 112, 112);
+}
+
 body .active {
   color: #0065FC;
   border-top: 5px solid #0065FC;
