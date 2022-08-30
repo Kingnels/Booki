@@ -1,4 +1,4 @@
-.main2{
+.main2 {
     @include flex( column,flex-start,flex-start);
     // border: 2px solid black;
     // padding: 1rem;
@@ -8,36 +8,50 @@
         // border: 2px solid black;
         margin: 2rem 0;
         width: 15rem;
+
         p{
             font-size: 1.4rem;
         }
         
     }
 
-    .main2-contents{
-        @include flex (row, flex-start,flex start);
-        width: 100%;
+    .main2-contents {
 
-        .four-box1{
+        // @include flex (row, flex-start,flex start);
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+        flex-flow: row wrap;
+        width: 100%;
+        gap:3rem;
+        // border: 2px solid navy;
+        margin-bottom: 1rem;
+
+        .four-box1 {
+
             @include flex (column,center, center);
             margin-bottom: 1rem;
-            width: 20rem;
-            height: 30rem;
+            width: 329px;
+            height: 480px;
             overflow: hidden;
             border-radius: 25px;
             // border: 2px solid red;
             box-shadow: 0 8px 10px #e5e1e1;
+        
             .image1{
                 width: 100%;
                 height: 100%;
                 display: flex;
                 overflow: hidden;
                 justify-content: flex-start; 
+
                 img{
                     width: 100%;
                     height: 85%rem;
                 }
             }
+
             .image-text {
                 // height: 35%;
                 width: 100%;
@@ -48,7 +62,56 @@
 
         }
 
+        .four-box2 {
+            @include flex (column,flex-start, flex-start);
+            margin-bottom: 1rem;
+            width: 329px;
+            height: 480px;
+            overflow: hidden;
+            border-radius: 25px;
+            gap: 2.5rem;
+            // border: 2px solid red;
+            box-shadow: 0 8px 10px #e5e1e1; 
 
+            .fort{
 
-    }
-}
+                @include flex (column,center, center);
+                // border: 4px solid yellow;
+                width: 329px;
+                height: 220px;
+                border-radius: 25px;
+                box-shadow: 0 10px 10px #e5e1e1;   
+                overflow: hidden; 
+               
+
+                .image2 {
+                    @include flex(column,flex-start, flex-start);
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    
+                img {
+                    // position: relative;
+                    // top: -140px;
+                    width: 100%;  
+                    }
+                    .rex{
+                        position: relative;
+                        top: -140px;
+                        width: 100%;  
+                    }
+
+                }
+                .image-text2 {
+                    width: 100%;
+                    padding: 20px;
+                    
+                }
+            
+            }
+            
+        }   
+     }
+    
+ }
+

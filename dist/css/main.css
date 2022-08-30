@@ -29,8 +29,11 @@ ul li {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
-  align-items: flex start;
+  align-items: center;
+  flex-flow: row wrap;
   width: 100%;
+  gap: 3rem;
+  margin-bottom: 1rem;
 }
 .main2 .main2-contents .four-box1 {
   display: flex;
@@ -38,8 +41,8 @@ ul li {
   flex-direction: column;
   align-items: center;
   margin-bottom: 1rem;
-  width: 20rem;
-  height: 30rem;
+  width: 329px;
+  height: 480px;
   overflow: hidden;
   border-radius: 25px;
   box-shadow: 0 8px 10px #e5e1e1;
@@ -56,6 +59,51 @@ ul li {
   height: 85% rem;
 }
 .main2 .main2-contents .four-box1 .image-text {
+  width: 100%;
+  padding: 20px;
+}
+.main2 .main2-contents .four-box2 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  width: 329px;
+  height: 480px;
+  overflow: hidden;
+  border-radius: 25px;
+  gap: 2.5rem;
+  box-shadow: 0 8px 10px #e5e1e1;
+}
+.main2 .main2-contents .four-box2 .fort {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 329px;
+  height: 220px;
+  border-radius: 25px;
+  box-shadow: 0 10px 10px #e5e1e1;
+  overflow: hidden;
+}
+.main2 .main2-contents .four-box2 .fort .image2 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.main2 .main2-contents .four-box2 .fort .image2 img {
+  width: 100%;
+}
+.main2 .main2-contents .four-box2 .fort .image2 .rex {
+  position: relative;
+  top: -140px;
+  width: 100%;
+}
+.main2 .main2-contents .four-box2 .fort .image-text2 {
   width: 100%;
   padding: 20px;
 }
